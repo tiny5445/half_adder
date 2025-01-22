@@ -33,15 +33,15 @@ jobs:
 
       - name: Test Summary
         uses: test-summary/action@v2.3
-        with:
-          paths: "test/results.xml"
+       # with:
+         # paths: "test/results.xml"
         if: always()
 
       - name: upload vcd
         if: success() || failure()
         uses: actions/upload-artifact@v4
-        with:
-          name: test-vcd
-          path: |
-            test/tb.vcd
-            test/results.xml
+      # with:
+       #   name: test-vcd
+      #    path: |
+       #   test/tb.vcd
+        #   test/results.xml
