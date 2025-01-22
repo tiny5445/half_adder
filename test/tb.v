@@ -8,7 +8,7 @@ module tb_half_adder;
     wire sum;
     wire carry;
 
-    half_adder uut (
+    tt_um_half_adder uut (
         .a(a),
         .b(b),
         .sum(sum),
