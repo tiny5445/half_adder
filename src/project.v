@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-module half_adder (
+module tt_um_half_adder (
     input wire a,
     input wire b,
     output wire sum,
